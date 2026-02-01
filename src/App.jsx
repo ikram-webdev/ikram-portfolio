@@ -56,14 +56,14 @@ const App = () => {
       desc: "Real-time vehicle tracking and fleet management solution with advanced monitoring.",
       tags: ["JavaScript", "React", "Tailwind", "Node.js", "Express.js", "MongoDB"],
       link: "https://fleet-watch-project.vercel.app/",
-      img: "./public/fleetwatch.jpg"
+      img: "/fleetwatch.jpg"
     },
     {
       title: "Solar Inventory System",
       desc: "The Solar Inventory System is a web-based platform designed to help users select the most suitable solar energy solution.",
       tags: ["HTML5", "CSS", "JavaScript", "PHP", "MySQL"],
       link: "#",
-      img: "./public/solar.avif"
+      img: "/solar.avif"
     }
   ];
 
@@ -142,7 +142,7 @@ const App = () => {
             <div className="relative mx-auto w-40 h-40 mb-10">
               <div className="absolute inset-0 bg-purple-600 blur-[60px] opacity-40 rounded-full animate-pulse" />
               <img 
-                src="./public/profile.jpg" 
+                src="/profile.jpg" 
                 alt="Muhammad Ikram" 
                 className="relative z-10 w-full h-full object-cover rounded-3xl border border-gray-200 dark:border-white/20 p-1 backdrop-blur-3xl"
                 onError={(e) => { e.target.src = "https://ui-avatars.com/api/?name=Muhammad+Ikram&background=6366f1&color=fff&size=128" }}
