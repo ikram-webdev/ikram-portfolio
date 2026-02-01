@@ -63,6 +63,7 @@ const App = () => {
       desc: "The Solar Inventory System is a web-based platform designed to help users select the most suitable solar energy solution.",
       tags: ["HTML5", "CSS", "JavaScript", "PHP", "MySQL"],
       link: "#",
+      status: "Offline",
       img: "/solar.avif"
     }
   ];
