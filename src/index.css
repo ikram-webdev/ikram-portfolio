@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *)); /* Ye line add karein */
+
+body {
+  @apply bg-white text-gray-900 transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-[#030014] text-white;
+}
+html {
+  scroll-behavior: smooth;
+}
