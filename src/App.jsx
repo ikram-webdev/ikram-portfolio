@@ -187,10 +187,18 @@ const App = () => {
                       <span key={tag} className="text-[10px] font-black uppercase tracking-widest bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20 px-3 py-1 rounded-lg ">{tag}</span>
                     ))}
                   </div>
-                  <a href={p.link} target="_blank" className="flex items-center justify-between w-full p-4 bg-gray-200 dark:bg-white/5 rounded-2xl group-hover:bg-purple-500 group-hover:text-white transition-all">
-                    <span className="font-black text-sm  tracking-widest">Live Preview</span>
-                    <ExternalLink size={18} />
-                  </a>
+                  <a 
+  href={p.link} 
+  target={p.link === "#" ? "_self" : "_blank"} 
+  className={`flex items-center justify-between w-full p-4 rounded-2xl font-bold transition-all ${
+    p.link === "#" 
+    ? "bg-gray-300 dark:bg-white/10 text-gray-500 cursor-not-allowed" // Disabled look
+    : "bg-gray-200 dark:bg-white/5 hover:bg-purple-500 hover:text-white" // Active look
+  }`}
+>
+  <span>{p.link === "#" ? "Offline / In-Dev" : "Live Preview"}</span>
+  <ExternalLink size={18} className={p.link === "#" ? "opacity-30" : ""} />
+</a>
                 </div>
               </motion.div>
             ))}
