@@ -70,6 +70,7 @@ const App = () => {
       title: "Fleet Watch Management System",
       desc: "Real-time vehicle tracking and fleet management solution with advanced monitoring.",
       tags: [
+        "HTML5",
         "JavaScript",
         "React",
         "Tailwind",
@@ -87,6 +88,20 @@ const App = () => {
       link: "#",
       status: "Offline",
       img: "/solar.avif",
+    },
+    {
+      title: "InCrime - AI Powered Pakistani Legal Assistant",
+      desc: "A full-stack legal web app that helps Pakistani citizens understand their legal rights and generate official Urdu court documents by custom NLP keyword engine Chatbot.",
+      tags: ["HTML5",
+        "JavaScript",
+        "React",
+        "Tailwind",
+        "Node.js",
+        "Express.js",
+        "MongoDB",],
+      link: "https://in-crime-client-final.vercel.app/",
+      status: "Online",
+      img: "/court.avif",
     },
   ];
 
@@ -136,7 +151,7 @@ const App = () => {
             <a
               href="https://wa.me/923129699582"
               target="_blank"
-              className="flex items-center gap-x-2 text-purple-600 dark:text-purple-400 font-bold px-4 hover:scale-105 transition-all whitespace-nowrap"
+              className="flex items-center gap-x-2 text-green-600 dark:text-green-400 font-bold px-4 hover:scale-105 transition-all whitespace-nowrap"
             >
               <FaWhatsapp size={24} className="shrink-0" />
               <span className="leading-none">Contact Me</span>
